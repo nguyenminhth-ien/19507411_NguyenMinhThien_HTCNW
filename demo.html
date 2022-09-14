@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH tiết 4-6 ngày 9/9</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: auto;
+        }
+        body{
+            background-color: aqua;
+        }
+        .wrapper{
+            height: 800px;
+            width: 1089px;
+            background-color: blue;
+        }
+        nav{
+            height: 50px;
+            width: 1089px;
+            background-color: blueviolet;
+        }
+        header{
+            height: 150px;
+            width: 1089px;
+            background-color: chartreuse;
+        }
+        .content{
+            height: 500px;
+            width: 1089px;
+            background-color: hotpink;
+        }
+        section{
+            height: 100%;
+            width: 65%;
+            background-color: seagreen;
+            float: left;
+        }
+        aside{
+            height: 100%;
+            width: 35%;
+            background-color: chocolate;
+            float: left;
+        }
+        footer{
+            height: 100px;
+            width: 1089px;
+            background-color: floralwhite;
+        }
+        .menu li{
+            width: 150px;
+            float: left;
+            line-height: 50px;
+            list-style: none;
+            text-indent: 10px;
+            background-color: cornflowerblue;
+            position: relative;
+        }
+        li a{
+            text-decoration: none;
+            font-weight: bold;
+            color:blue ;
+        }
+        li:hover{
+            background-color: blue;
+        }
+        li:hover>a{
+            color: yellow;
+            font-style: italic;
+        }
+        li .sub-menu{
+            display: none;
+            position: absolute;
+        }
+        li:hover>.sub-menu{
+            display: block;
+        }
+        li .sub-menu li:hover >.sub-menu{
+            top: 0px;
+            left: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="iuh.edu.vn">HOME</a></li>
+                <li><a href="#">SERVICE</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">COMPUTER</a></li>
+                        <li><a href="#">ADLS</a>
+                            <ul class="sub-menu">
+                                <li><a href="">5G</a></li>
+                                <li><a href="">4G</a></li>
+                                <li><a href="">3G</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MOBIPHONE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HELP</a></li>
+            </ul>
+        </nav>
+    
+        <div class="content">
+            <section>
+
+            </section>
+            <aside>
+
+            </aside>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
