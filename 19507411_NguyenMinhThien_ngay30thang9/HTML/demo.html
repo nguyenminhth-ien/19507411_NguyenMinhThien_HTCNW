@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+          .wrapper{
+            height: 800px;
+            width: 1089px;
+            background-color: antiquewhite;
+            border: solid 4px chocolate;
+            }
+        header{
+            height: 150px;
+            width: 100%;
+            background-image: url(../IMG/Header.PNG);
+            position: relative;
+        }  
+        p{
+            position: absolute;
+            top: 23px;
+            left: 300px;
+            font-size: xx-large;
+            text-shadow: 2px 2px #cf3333;
+        }
+        .menu li{
+            display: flex;
+            position: absolute;
+            background-color: aqua;
+            left: 100px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: solid 3px rgb(196,20,93);
+            text-shadow: 2px 2px #cf3333;
+            list-style-type: none;
+            padding: 10px;
+        }
+        .menu li:hover{
+            background-color:yellow;
+            color: #cf3333;
+        }
+        li a{
+            text-decoration: none;
+        }
+        .menu li:nth-child(4){left: 600px; top: 90px}
+        .menu li:nth-child(3){left: 500px; top: 90px}
+        .menu li:nth-child(2){left: 400px; top: 90px}
+        .menu li:nth-child(1){left: 300px; top: 90px}
+        #frmGo{
+            position: absolute;
+            left: 800px;
+            top: 30px;
+        }
+        #frmGo #txtSearch{
+            border-radius: 30px;
+            padding: 5px;
+            font-weight: bold;
+            font-style:italic;
+        }
+        #frmGo #btnGo{
+            border-radius: 50%;
+            padding: 5px;
+            font-style: italic;
+            font-weight: bold;
+            background-color: antiquewhite;
+        }
+        aside{
+            width: 50%;
+            height:300px;
+           
+            float: left;
+            background-color: #cf3333;
+
+        }
+        section{
+            width: 50%;
+            height:300px;
+            float:left ;
+            background-color: aqua;
+        }
+        .frm{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body background="../IMG/backgound.jpg">
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href=""></a>itemx</li>
+                    <li><a href=""></a>itemx</li>
+                    <li><a href=""></a>itemx</li>
+                    <li><a href=""></a>itemx</li>
+                </ul>
+            </nav>
+            <form action="iuh.edu.vn" method="post" id="frmGo">
+                <input type="text" name="txtSearch" id="txtSearch" placeholder="text search">
+                <button type="submit" id="btnGo">Go</button>
+            </form>
+        </header>
+        <div class="content">
+            <aside>
+                <h1>ABC
+
+                </h1>
+            </aside>
+            <section>
+                <form action="" class="frm">
+                    <h4>Thong tin dang ky</h4>
+                    <fieldset>
+                        <legend>Thong tin sinh vien</legend>
+                        <div>
+                            <label for="">Ma SV</label>
+                            <input type="text" name="" id="" placeholder="19507411">
+                        </div>
+                        <div>
+                            <label for="">Ho ten</label>
+                            <input type="text" name="" id="" placeholder="Nguyen Minh Thien">
+                        </div>
+                        <div>
+                            <label for="">Ngay sinh</label>
+                            <input type="date" name="" id="">
+                        </div>
+                        <input type="button" value="Dang ky">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <footer>
+        
+        </footer>
+    </div>
+</body>
+</html>
